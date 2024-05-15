@@ -74,6 +74,10 @@
 }
 
 
+canvas{
+    box-shadow: 0px 0px 21px 6px #293D21;
+}
+
 .center{
     flex-direction: column;
     overflow-x: hidden;
