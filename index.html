@@ -1,0 +1,51 @@
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="error">
+    <div class="message">
+      <h2>Sorry !</h2>
+      <p>This game is only playable on computer</p>
+    </div>
+
+  </div>
+  <div class="center">
+    <div class="container">
+      <div class="barInterface">
+        <div class="playerHealth" dir="rtl">
+          <div id="playerCurrentHealth"></div>
+          <div class="maxHealth"></div>
+        </div>
+        <div class="timer">10</div>
+        <div class="enemyHealth">
+          <div id="enemyCurrentHealth"></div>
+          <div class="maxHealth"></div>
+        </div>
+      </div>
+      <div class="text"></div>
+      <canvas> </canvas>
+    </div>
+    <div class="keys"> 
+      <p class="note">Note:La sélection de personnage et le mode ia sont en cours de développement</p>
+        <h2 class="text-center">Keys:</h2>
+        <h3>White sprite:</h3>
+        <ul>
+          <li>go left: "q"</li>
+          <li>go right: "d"</li>
+          <li>attack: "space"</li>
+          <li>jump: "z"</li>
+        </ul>
+
+        <h3>Black sprite:</h3>
+        <ul>
+          <li>go left: "ArrowLeft"</li>
+          <li>go right: "ArrowRight"</li>
+          <li>attack: "ArrowDown"</li>
+          <li>jump: "ArrowUp"</li>
+        </ul>
+    </div>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="index.js"></script>
+</body>

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    /* width: 100%; */
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
+    /* height: 100%; */
+}
+
+.container{
+    position: relative;
+    display: inline-block;
+}
+
+.barInterface{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.timer{
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    color: white;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid white 4px;
+}
+
+.playerHealth, .enemyHealth{
+    position: relative;
+    width: 100%;
+    border-top: solid white 4px;
+    border-bottom: solid white 4px;
+}
+
+.playerHealth{
+    border-left: solid white 4px;
+}
+.enemyHealth{
+    border-right: solid white 4px;
+}
+
+#playerCurrentHealth,#enemyCurrentHealth{
+    position: absolute;
+    background-color: #818CF8;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: width 0.5s;
+}
+
+.maxHealth{
+    background-color: red;
+    height: 30px;
+}
+
+.text{
+    color: white;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.center{
+    flex-direction: column;
+    overflow-x: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-image: 
+    url("img/background_layer_3.png"),
+    url("img/background_layer_2.png"),
+    url("img/background_layer_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.keys{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
+    max-width: 500px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    order: -1;
+}
+
+h2{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-transform: uppercase;
+}
+
+.text-center{
+    text-align: center;
+}
+
+h3{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h3::before{
+    content: "* ";
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+.note{
+    color: darkred;
+    max-width: 500px;
+    font-style: italic;
+    font-size: small;
+}
+
+
+.error{
+    background-image: 
+    url("img/background_layer_3.png"),
+    url("img/background_layer_2.png"),
+    url("img/background_layer_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.message{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+    gap: 100px;
+    padding: 0 60px;
+    line-height: 2;
+}
+
+
+@media only screen and (min-width: 1400px) {
+    
+    .keys{
+        order: 1
+
+    }
+
+    .center{
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (max-width: 999px) {
+    .center{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .error{
+        display: none;
+    }
+}
